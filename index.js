@@ -51,5 +51,25 @@ const inputPass = (password, noOfInput) => {
 
         })
 }
-const x=prompt("Enter a password")
-inputPass(x,3);
+// const x=prompt("Enter a password")
+// inputPass(x,3);
+
+
+const p1=()=>{
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{reject("P1 done")},2000);
+    })
+}
+const p2=()=>{
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{reject("P2 done")},5000);
+    })
+}
+const p3=()=>{
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{reject("P3 reject")},1000);
+    })
+}
+Promise.any([p1(),p2(),p3()])
+.then((res)=>console.log(res))
+.catch((err)=>console.log(err));
