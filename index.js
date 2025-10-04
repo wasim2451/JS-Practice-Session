@@ -29,10 +29,10 @@ const checkPass = (retries, password) => {
                     console.log(`You have ${retries - 1} pending `);
                     reject('Try Again');
                 } else {
-                    reject('No retries left');
+                    reject('Access Denied !');
                 }
             }
-        }, 5000)
+        }, 2000)
     })
 }
 
@@ -43,12 +43,13 @@ const inputPass = (password, noOfInput) => {
         })
         .catch((e) => {
             if (e == 'Try Again' && noOfInput > 1) {
-                inputPass('xyz',noOfInput-1);
+                const x=prompt("Enter Password");
+                inputPass(x,noOfInput-1);
             } else {
                 console.log(e);
             }
 
         })
 }
-
-inputPass('abc',3);
+const x=prompt("Enter a password")
+inputPass(x,3);
