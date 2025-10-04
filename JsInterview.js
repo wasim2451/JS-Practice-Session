@@ -69,5 +69,68 @@
 
 // const c=a++ + ++a; // 100 + (101+1=102) 102 = 202
 
+// Question 1
+// If u want to access a char from a particular index which method in JS
+// My ans : str[index] , str.charAt(index)
+// let str="hello world"
+// console.log(str[2]);
+// console.log(str.charAt(2));
 
+
+// Question 2 
+//Deep Copy vs Shallow Copy 
+
+// let original={
+//     name:"Wasim",
+//     subject:{
+//         book:"History",
+//         book2:"Bio"
+//     }
+// }
+// let shallow={...original};
+// // console.log(original.name===shallow.name);
+// // console.log(original==shallow);
+// shallow.name="abc";
+// console.log(original);
+// shallow.subject.book="Chem";
+// console.log(original);
+// //It is creating a new Reference at the top level object but for nested ones it is sharing the reference
+
+
+// // Deep copy
+// let deepCopy=structuredClone(original);
+// console.log(deepCopy==original); // false ;
+// console.log(deepCopy.subject===original.subject); // false
+
+// //Question 3 
+//  console.log(100+"8"+20)
+//  // Convert everything to string -> 100820
+ 
+// //Question 4
+// let abc=100;
+// if(function xyz(){
+// }){
+//     abc=abc+typeof(xyz)
+// }
+// console.log(abc); // Guess the output !
+// function pqr(){};
+// console.log(typeof pqr);
+
+// let arr=[1,2,3];
+// // let brr=arr.splice(0,1);
+// // console.log("brr",brr); // sliced out 
+// // console.log("arr",arr); // remaining in original arr
+// let brr=arr.slice(0,1);
+// console.log(brr);
+// console.log(arr);
+
+// let obj={
+//     xyz:"WK",
+//     pqr:function(){
+//         console.log(this.xyz);
+//     }
+// }
+// const c=obj.pqr; 
+// obj.pqr(); 
+// c(); 
 
