@@ -134,3 +134,8 @@
 // obj.pqr(); 
 // c(); 
 
+// let arr=[0,1,2,3,4];
+// // console.log(arr.findIndex((item)=>item==4));
+// // console.log(arr.includes(10));
+let str="hello";
+console.log(str.includes('xx',-2));
