@@ -1,14 +1,18 @@
-// s="hello world";
-// o="Hello World"
+function capitalizeWords(str) {
+    // Your implementation
+    // Step 1: Split string into words
+    let arr = str.split(' ');
 
-let str="i am wasim akhtar khan";
-let arr=str.split(' ');
-// console.log(arr);
-let ans="";
-for(let i=0;i<arr.length;i++){
-    console.log(arr[i]);
-    ans=ans+arr[i][0].toUpperCase()+arr[i].slice(1);
-    ans=ans+" ";
+    // Step 2: Capitalize the first letter of each word
+    arr = arr.map((item) => item[0].toUpperCase() + item.slice(1));
+
+    // Step 3: Join the words back into a single string
+    let ans = arr.join(' ');
+
+    // Step 4: Return final answer
+    return ans;
 }
-console.log(ans);
+console.log(capitalizeWords("hello world"));
+
+
 
