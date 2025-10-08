@@ -91,6 +91,15 @@
 // }
 // setTimeout(abc,2000);
 
+// Arguements Object 
+// When we pass parameters to a function then the parameters are stored in an array like object called
+//arguement object -> can be accessed through arguements.
+
+// function abc(a,b,c){
+//     console.log(arguments[0]);
+// }
+// abc(2,3,5);
+
 
 
 
