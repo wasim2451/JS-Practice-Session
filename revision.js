@@ -64,6 +64,35 @@
 // console.log({a});
 // console.log({b});
 
+// How js Engine works behind the scene
+// Execution Context 
+// GEC and FEC || Memory Allocation Phase and Code Execution Phase 
+// varibales  -> undefined and function -> function 
+// CallStack : Stack that maintains the order of Execution Contexts. 
+// GEC->FEC->Nested FEC (run one by one then leaves the stack ) 
+
+//let and const are also hoisted but they remain in other scope (Script scope)
+//let and const remian in TDZ
+// TDZ means the time between let and const are hoisted to the time le and const are initialized is called TDZ .
+
+//Diff b/w var , let and const -> var (hoisted global scope) let and const (hoisted script scope) 
+// var -> global scope and let and const -> block scope 
+
+//const must be initialized after declaration : Immutable but if its an array or obj then the elements inside can be changed .
+// First Class Function -> functions which can be treated like a varibles are called 1st class functions. 
+// assign a const to a fun | we can pass it as a arguement | we can return it from a fun
+
+// Higher Order Fun -> fun that takes a fun as an arguement or returns a fun or does both 
+
+// Callback Fun -> A fun that is passed as an arguement to another fun and can be called anywhere inside the parent fun .
+
+// function abc(){
+//     console.log("hello world");
+// }
+// setTimeout(abc,2000);
+
+
+
 
 
 
